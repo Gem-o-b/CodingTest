@@ -1,16 +1,17 @@
+package src.programmers.lv0.q181938;
 
 class Solution {
-    public int solution(int n) {
-        int answer = 0;
-
+    public String solution(String S) {
+        String answer = "";
         return answer;
     }
+
 }
 
 
 public class Main {
     public static void main(String[] args) {
-        int n = 0;
+        String n = "(){()}[]";
         Solution solution = new Solution();
         System.out.println(solution.solution(n));
 //        System.out.println(Arrays.toString(solution.solution(n)));

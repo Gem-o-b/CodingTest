@@ -1,6 +1,8 @@
+package src.madup.q1;
 
 class Solution {
     public int solution(int n) {
+        int[] language = new int[100000];
         int answer = 0;
 
         return answer;

@@ -23,8 +23,8 @@ class Solution {
             int dateM = Integer.parseInt(date.split("\\.")[1]);
             int dateD = Integer.parseInt(date.split("\\.")[2]);
             int termM = termMap.get(type);
-            int addY = (dateM + termM) / 13;
-            dateM = (dateM + termM) % 12 == 0 ? 12 : (dateM + termM) % 12;
+            int addY = (dateM + termM - 1) / 12;
+            dateM = dateM +termM - addY * 12;
             dateY = dateY + addY;
 
             String formatDate = String.format("%04d%02d%02d", dateY, dateM, dateD);
